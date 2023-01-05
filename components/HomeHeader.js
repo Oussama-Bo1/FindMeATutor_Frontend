@@ -2,8 +2,15 @@ import { View, Text, Image, TextInput } from 'react-native'
 import React from 'react'
 
 import { COLORS, FONTS, SIZES, assets } from '../constants'
+import {CircleButton} from "./Button";
+import {useNavigation} from "@react-navigation/native";
+import Login from "../screens/Login";
 
 const HomeHeader = ({ onSearch }) => {
+  const navigation = useNavigation();
+
+
+
   return (
     <View style={{
       backgroundColor: COLORS.primary,
@@ -21,10 +28,11 @@ const HomeHeader = ({ onSearch }) => {
         />
 
         <View style={{ width:45, height: 45 }}>
-          <Image 
-            source={assets.person01}
+          <CircleButton
+            imgURL={assets.person01}
             resizeMode="contain"
             style={{ width: "100%", height: "100%" }}
+            handlePress={() => navigation.navigate(Login)}
           />
           <Image 
             source={assets.badge}

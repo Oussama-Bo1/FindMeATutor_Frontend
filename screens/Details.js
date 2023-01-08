@@ -51,17 +51,17 @@ const Details = ({ route, navigation }) => {
         }}
       >
         <RectButton 
-          text={"Termin finden"} 
+          text={"zum Forum"} 
           minWidth={170} 
           fontSize={SIZES.large} 
-          handlePress={() => navigation.navigate("Booking", { data })}
+          handlePress={() => navigation.navigate("Forum", { data })}
           {...SHADOWS.dark} 
           />
       </View>
 
       <FlatList
         data={data.bids}
-        renderItem={({ item }) => <DetailsBid bid={item} />}
+        renderItem={({ item }) => <DetailsBid bid={item} navigation={navigation} data={data} />}
         keyExtractor={(item) => item.id}
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{

@@ -1,5 +1,5 @@
 import React, {useContext, useState} from "react";
-import {View, Image, StyleSheet, useWindowDimensions, ScrollView, StatusBar, Text, Button} from "react-native";
+import {View, Image, StyleSheet, useWindowDimensions, ScrollView, StatusBar, TextInput, Button} from "react-native";
 import Logo from "../assets/images/logo.png";
 import CustomInput from "../components/CustomInput";
 import CustomButton from "../components/CustomButton";
@@ -7,16 +7,16 @@ import { useNavigation} from "@react-navigation/native";
 import Home from "./Home";
 import ForgotPassword from "./ForgotPassword";
 import SignUp from "./SignUp";
-import {assets} from "../constants";
-import {CircleButton} from "../components";
+import {assets, COLORS, SIZES, SHADOWS} from "../constants";
+import {CircleButton, RectButton} from "../components";
 import {AuthContext} from "../context/AuthContext";
 
 const Login = () => {
-    const [username, setUsername] = useState(null);
-    const [password, setPassword] = useState(null);
     const { height } = useWindowDimensions();
     const navigation = useNavigation();
     const {login} = useContext(AuthContext);
+    const [benutzername, setBenutzername] = useState('');
+    const [benutzerPasswort, setBenutzerPasswort] = useState('');
 
     const onSignInPresses = () => {
         //TODO: Add login logic
@@ -42,20 +42,33 @@ const Login = () => {
             top={StatusBar.currentHeight + 10}
         />
       <Image source={Logo} style={[styles.logo, {height: height * 0.3}]} resizeMode="contain"/>
-        <CustomInput
-            placeholder="E-Mail Adresse"
-            value={username}
-            setValue={setUsername}
-        />
-        <CustomInput
-            placeholder="Passwort"
-            value={password}
-            setValue={setPassword}
+      <TextInput style={{
+                borderWidth: 1,
+                borderColor: COLORS.primary,
+                padding: SIZES.font,
+                margin: SIZES.font,
+                width: '100%'
+            }}
+            placeholder='Login...'
+            onChangeText={(val) => setBenutzername(val)}
+            />
+            <TextInput style={{
+                borderWidth: 1,
+                borderColor: COLORS.primary,
+                padding: SIZES.font,
+                margin: SIZES.font,
+                width: '100%'
+            }}
+            placeholder='Passwort...'
+            onChangeText={(val) => setBenutzerPasswort(val)}
             secureTextEntry={true}
-        />
+            />
 
-        <Button title="Anmelden"
-                onPress={login(username, password)}
+        <RectButton 
+        text={"Anmelden"}  
+        fontSize={SIZES.large} 
+        handlePress={() => login(benutzername, benutzerPasswort)}
+        {...SHADOWS.dark}
         />
 
         <CustomButton

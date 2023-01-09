@@ -7,6 +7,9 @@ import { useFonts } from "expo-font";
 import Home from "./screens/Home";
 import Details from "./screens/Details";
 import Booking from "./screens/Booking";
+import BookingConformation from "./screens/BookingConformation";
+import Forum from "./screens/Forum";
+import CreateThread from "./screens/CreateThread";
 import Login from "./screens/Login";
 import SignUp from "./screens/SignUp";
 import ConfirmEmail from "./screens/ConfirmEmail";
@@ -48,11 +51,14 @@ const App = () => {
       >
         <Stack.Screen name="Home" component={Home}/>
         <Stack.Screen name="Details" component={Details} />
+        <Stack.Screen name="Booking" component={Booking} />
+        <Stack.Screen name="BookingConformation" component={BookingConformation} />
+        <Stack.Screen name="Forum" component={Forum} />
+        <Stack.Screen name="CreateThread" component={CreateThread} />
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="SignUp" component={SignUp} />
         <Stack.Screen name="ForgotPassword" component={ForgotPassword} />
         <Stack.Screen name="NewPassword" component={NewPassword} />
-        <Stack.Screen name="Booking" component={Booking}/>
         <Stack.Screen name="ConfirmEmail" component={ConfirmEmail}/>
       </Stack.Navigator>
     </NavigationContainer>

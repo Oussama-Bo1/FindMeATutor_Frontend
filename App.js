@@ -38,8 +38,13 @@ const App = () => {
 
   if (!loaded) return null;
   const {userToken} = React.useContext(AuthContext);
-  let initialRouteName = userToken !== null ? "Home" : "Login";
-
+  let initialRouteName = "";
+  console.log(userToken);
+  if (userToken == null | userToken == undefined)  {
+        initialRouteName = "Login"
+      } else {
+        initialRouteName = "Home";
+      }
   return (
       <AuthProvider>
     <NavigationContainer theme={theme}>

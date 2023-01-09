@@ -9,6 +9,7 @@ import Details from "./screens/Details";
 import Booking from "./screens/Booking";
 import BookingConformation from "./screens/BookingConformation";
 import Forum from "./screens/Forum";
+import CreateThread from "./screens/CreateThread";
 
 const theme = {
   ...DefaultTheme,
@@ -44,6 +45,7 @@ const App = () => {
         <Stack.Screen name="Booking" component={Booking} />
         <Stack.Screen name="BookingConformation" component={BookingConformation} />
         <Stack.Screen name="Forum" component={Forum} />
+        <Stack.Screen name="CreateThread" component={CreateThread} />
       </Stack.Navigator>
     </NavigationContainer>
   );

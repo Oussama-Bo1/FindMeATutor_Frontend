@@ -24,10 +24,11 @@ const DetailsHeader = ({ data, navigation }) => (
   </View>
 );
 
-const Forum = ({ route, navigation }) => {
+const CreateThread = ({ route, navigation }) => {
 
   const [forumMockData, setForumMockData] = useState(ForumMockData);
   const { data } = route.params;
+
 
     return (
         <SafeAreaView style={{ flex: 1 }}>
@@ -50,10 +51,10 @@ const Forum = ({ route, navigation }) => {
             }}
           >
             <RectButton 
-              text={"Stelle selber eine Frage"} 
+              text={"Thread erstellen"} 
               minWidth={170} 
               fontSize={SIZES.large} 
-              handlePress={() => navigation.navigate("CreateThread", { data })}
+              handlePress={() => navigation.navigate("Home", { data })}
               {...SHADOWS.dark} 
               />
           </View>
@@ -77,18 +78,13 @@ const Forum = ({ route, navigation }) => {
                         color: COLORS.primary,
                       }}
                     >
-                      Wie kann dir die Community helfen?
+                      Stelle selber eine Frage und lass Dir von der Community helfen!
                     </Text>
                   
                 </View>
                 <View style={{ flex: 1 }}>
                     <View style={{ zIndex: 0 }}>
-                        <FlatList 
-                            data = {forumMockData}
-                            renderItem = {({ item }) => <ForumCard data={ item }/>}
-                            keyExtractor = {(item) => item.id}
-                            showsVerticalScrollIndicator = {false}
-                        />
+                        
                   </View>
                 </View>
               </React.Fragment>
@@ -98,4 +94,4 @@ const Forum = ({ route, navigation }) => {
     )
 }
 
-export default Forum
+export default CreateThread

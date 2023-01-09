@@ -37,7 +37,7 @@ const Login = () => {
     <View style={styles.root}>
         <CircleButton
             imgURL={assets.left}
-            handlePress={() => navigation.goBack()}
+            handlePress={() => navigation.navigate(Home)}
             left={15}
             top={StatusBar.currentHeight + 10}
         />

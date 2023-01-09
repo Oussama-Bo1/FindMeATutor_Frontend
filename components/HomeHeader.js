@@ -5,9 +5,11 @@ import { COLORS, FONTS, SIZES, assets } from '../constants'
 import {CircleButton} from "./Button";
 import {useNavigation} from "@react-navigation/native";
 import Login from "../screens/Login";
+import {AuthContext} from "../context/AuthContext";
 
 const HomeHeader = ({ onSearch }) => {
   const navigation = useNavigation();
+  const {userInfo} = React.useContext(AuthContext);
 
 
 
@@ -44,7 +46,7 @@ const HomeHeader = ({ onSearch }) => {
 
       <View style={{ margin: SIZES.font }}>
         <Text style={{ fontFamily: FONTS.regular, fontSize: SIZES.font, color: COLORS.white }}>
-          Hallo Julius,
+          Hallo {userInfo.email},
         </Text>
         <Text style={{ fontFamily: FONTS.bold, fontSize: SIZES.large, color: COLORS.white, marginTop: SIZES.base / 2 }}>
           Fange jetzt an und werde zum 1er Schüler!

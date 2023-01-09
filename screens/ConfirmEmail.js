@@ -1,10 +1,13 @@
 import React, {useState} from "react";
-import {View, StyleSheet, ScrollView, Text} from "react-native";
+import {View, StyleSheet, ScrollView, Text, StatusBar, Image} from "react-native";
 import CustomInput from "../components/CustomInput";
 import CustomButton from "../components/CustomButton";
 import {useNavigation} from "@react-navigation/native";
 import Home from "./Home";
 import Login from "./Login";
+import {assets} from "../constants";
+import {CircleButton} from "../components";
+import Logo from "../assets/images/logo.png";
 
 const ConfirmEmail = () => {
     const [code, setCode] = useState("");
@@ -23,6 +26,12 @@ const ConfirmEmail = () => {
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
     <View style={styles.root}>
+        <CircleButton
+            imgURL={assets.left}
+            handlePress={() => navigation.goBack()}
+            left={15}
+            top={StatusBar.currentHeight + 10}
+        />
       <Text style={styles.title}>Bestätige deine E-Mail Adresse</Text>
         <CustomInput
             placeholder="Code"

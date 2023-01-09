@@ -1,10 +1,13 @@
 import React, {useState} from "react";
-import {View, StyleSheet, ScrollView, Text} from "react-native";
+import {View, StyleSheet, ScrollView, Text, StatusBar, Image} from "react-native";
 import CustomInput from "../components/CustomInput";
 import CustomButton from "../components/CustomButton";
 import {useNavigation} from "@react-navigation/native";
 import Login from "./Login";
 import NewPassword from "./NewPassword";
+import {assets} from "../constants";
+import {CircleButton} from "../components";
+import Logo from "../assets/images/logo.png";
 
 const ForgotPassword = () => {
     const [username, setUsername] = useState("");
@@ -20,6 +23,12 @@ const ForgotPassword = () => {
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
     <View style={styles.root}>
+        <CircleButton
+            imgURL={assets.left}
+            handlePress={() => navigation.goBack()}
+            left={15}
+            top={StatusBar.currentHeight + 10}
+        />
       <Text style={styles.title}>Passwort zurücksetzen</Text>
         <CustomInput
             placeholder="Username"

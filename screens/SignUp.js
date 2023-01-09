@@ -1,16 +1,20 @@
 import React, {useState} from "react";
-import {View, StyleSheet, ScrollView, Text} from "react-native";
+import {View, StyleSheet, ScrollView, Text, StatusBar, Image, useWindowDimensions} from "react-native";
 import CustomInput from "../components/CustomInput";
 import CustomButton from "../components/CustomButton";
 import {useNavigation} from "@react-navigation/native";
 import ConfirmEmail from "./ConfirmEmail";
 import Login from "./Login";
+import {assets} from "../constants";
+import {CircleButton} from "../components";
+import Logo from "../assets/images/logo.png";
 
 const SignUp = () => {
     const [username, setUsername] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
+    const { height } = useWindowDimensions();
 
     const navigation = useNavigation();
 
@@ -32,6 +36,13 @@ const SignUp = () => {
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
     <View style={styles.root}>
+        <CircleButton
+            imgURL={assets.left}
+            handlePress={() => navigation.goBack()}
+            left={15}
+            top={StatusBar.currentHeight + 10}
+        />
+        <Image source={Logo} style={{height: height * 0.3, width: "70%", maxWidth: 300, maxHeight: 200}} resizeMode="contain"/>
       <Text style={styles.title}>Erstelle ein Konto</Text>
         <CustomInput
             placeholder="Benutzername"
@@ -84,6 +95,7 @@ const styles = StyleSheet.create({
         padding: 20,
     },
     text: {
+        alignItems: "center",
         color: "grey",
         marginVertical: 10,
     },

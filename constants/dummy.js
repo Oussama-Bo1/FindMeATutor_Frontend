@@ -7,7 +7,7 @@ const NFTData = [
     creator: "",
     price: 4.25,
     description:
-      "The action painter abstract expressionists were directly influenced by automatism. Pollock channelled this into producing gestural. The action painter abstract expressionists were directly influenced by automatism. Pollock channelled this into producing gestural. The action painter abstract expressionists were directly influenced by automatism. Pollock channelled this into producing gestural.",
+      "Anforderungen an Abstraktion, Folgerichtigkeit und Exaktheit bei der Auseinandersetzung mit mathematischen Problemen schulen in besonderem Maße das systematische und logische Denken sowie das kritische Urteilen. Beim selbstständigen Bearbeiten von mathematischen Problemen nutzen und reflektieren die Schülerinnen und Schüler Heurismen und festigen das Vertrauen in ihre Denkfähigkeit. Bei der Bearbeitung von Problemen erfahren Schülerinnen und Schüler, dass Anstrengungsbereitschaft und Beharrlichkeit erforderlich sind, um zu Lösungen zu gelangen.Digitale Mathematikwerkzeuge ermöglichen durch die vielfältigen und schnell zugänglichen Darstellungsformen ein experimentelles Arbeiten. Mathematische Probleme können durch Variation und Erkundung der Konsequenzen eigenständig gefunden und gelöst werden. Dabei bietet sich die Gelegenheit, über die Tauglichkeit der eingesetzten Werkzeuge zu reflektieren.",
     image: assets.nft01,
     bids: [
       {
@@ -57,7 +57,7 @@ const NFTData = [
     creator: "",
     price: 95.25,
     description:
-      "The action painter abstract expressionists were directly influenced by automatism. Pollock channelled this into producing gestural. Lorem ipsum dolor sit amet consectetur adipiscing elit consequat accumsan sapien, lectus convallis malesuada odio curae habitasse dignissim nascetur. Nulla sed velit erat vitae leo sem inceptos diam fames arcu hendrerit, quis ultrices in eleifend posuere ipsum conubia porttitor felis. Lorem ipsum dolor sit amet consectetur adipiscing elit consequat accumsan sapien, lectus convallis malesuada odio curae habitasse dignissim nascetur. Nulla sed velit erat vitae leo sem inceptos diam fames arcu hendrerit, quis ultrices in eleifend posuere ipsum conubia porttitor felis.",
+      "",
     image: assets.nft03,
     bids: [
       {
@@ -82,7 +82,7 @@ const NFTData = [
     creator: "",
     price: 54.25,
     description:
-      "The action painter abstract expressionists were directly influenced by automatism. Pollock channelled this into producing gestural.Lorem ipsum dolor sit amet consectetur adipiscing elit consequat accumsan sapien, lectus convallis malesuada odio curae habitasse dignissim nascetur.",
+      "Am Ende von Schuljahrgang 4 sprechen die Schülerinnen und Schüler mit sehr einfachen bekannten Redemitteln zu Themen, die sich auf die eigene Person und die unmittelbare Lebenswelt beziehen.",
     image: assets.nft04,
     bids: [
       {
@@ -121,7 +121,7 @@ const NFTData = [
     creator: "",
     price: 10.25,
     description:
-      "The action painter abstract expressionists were directly influenced by automatism. Pollock channelled this into producing gestural.",
+      "Ziel des Französischunterrichts in der Qualifikationsphase ist die Festigung und integrative Erweiterung der in den Schuljahrgängen 6 - 10 (bzw. 7 - 11 an der Gesamtschule) entwickelten Teilkompetenzen. Für die fortgeführte Fremdsprache orientieren sich die Erwartungen an der Niveaustufe B2 - in einzelnen Bereichen C1 - des Gemeinsamen europäischen Referenzrahmen für Sprachen",
     image: assets.nft05,
     bids: [
       {
@@ -139,7 +139,7 @@ const NFTData = [
     creator: "",
     price: 20.25,
     description:
-      "The action painter abstract expressionists were directly influenced by automatism. Pollock channelled this into producing gestural. Lorem ipsum dolor sit amet consectetur adipiscing elit consequat accumsan sapien, lectus convallis malesuada odio curae habitasse dignissim nascetur. Nulla sed velit erat vitae leo sem inceptos diam fames arcu hendrerit, quis ultrices in eleifend posuere ipsum conubia porttitor felis.",
+      "Zu dem Kompetenzbereich Erkenntnisgewinnung zählen fachspezifische Denk- und Arbeitsweisen. Dazu gehört, dass Schülerinnen und Schüler chemische Fragestellungen erkennen, entwickeln und experimentell untersuchen. Folglich spielt das Experiment eine zentrale Rolle im Chemieunterricht.Zur Deutung der Phänomene müssen geeignete Modelle eingeführt, angewendet und kritisch reflektiert werden. Bei der Kompetenzentwicklung werden mathematische Methoden unter besonderer Be- rücksichtigung der Lernvoraussetzungen der Schülerinnen und Schüler verwendet, um einem unver- standenen und inhaltsleeren Umgang mit Formalismen entgegenzuwirken.Durch die wiederholte Auseinandersetzung mit chemischen Fragestellungen erhalten die Schülerin- nen und Schüler einen Einblick in den naturwissenschaftlichen Erkenntnisprozess. Dadurch wird ein Beitrag für die Entwicklung eines rationalen, naturwissenschaftlich begründeten Weltbildes geleistet.",
     image: assets.nft06,
     bids: [
       {
@@ -185,7 +185,7 @@ const NFTData = [
     creator: "",
     price: 18.25,
     description:
-      "The action painter abstract expressionists were directly influenced by automatism. Pollock channelled this into producing gestural. Lorem ipsum dolor sit amet consectetur adipiscing elit consequat accumsan sapien, lectus convallis malesuada odio curae habitasse dignissim nascetur. Nulla sed velit erat vitae leo sem inceptos diam fames arcu hendrerit, quis ultrices in eleifend posuere ipsum conubia porttitor felis. Ullamcorper platea penatibus ornare egestas nulla ligula hendrerit nisl suscipit sociosqu maximus, tincidunt aptent habitant purus pharetra ultrices dapibus laoreet nisi lacinia. Porta malesuada netus vel sapien conubia porttitor aliquam ut pretium ante litora molestie senectus magna egestas sociosqu, eget aliquet fames pharetra felis posuere varius fringilla quisque in arcu montes eu ullamcorper.",
+      "Problemorientierter naturwissenschaftlicher Unterricht erweitert kontinuierlich und kumulativ die Fähigkeiten der Schülerinnen und Schüler, naturwissenschaftliche Fragen als solche zu erkennen und mit geeigneten fachspezifischen Verfahren zu lösen. Dabei geht es im Wesentlichen um den Umgang mit Problemlösestrategien und um fachspezifische Arbeitstechniken. Besonders bedeutsam ist das hypothesengeleitete Experimentieren; schrittweise wird die Fähigkeit der Lernenden zur eigenständigen systematischen Planung aussagekräftiger Experimente entwickelt. Neben demExperimentieren spielt in der Biologie das Beobachten von Naturphänomenen eine wesentliche Rolle. Beiden zentralen Kompetenzen liegt der naturwissenschaftliche Erkenntnisweg nach dem hypothetisch-deduktiven Verfahren zugrunde.",
     image: assets.nft07,
     bids: [],
   },
@@ -195,7 +195,7 @@ const NFTData = [
     creator: "",
     price: 20.25,
     description:
-      "The action painter abstract expressionists were directly influenced by automatism. Pollock channelled this into producing gestural. Lorem ipsum dolor sit amet consectetur adipiscing elit consequat accumsan sapien, lectus convallis malesuada odio curae habitasse dignissim nascetur. Nulla sed velit erat vitae leo sem inceptos diam fames arcu hendrerit, quis ultrices in eleifend posuere ipsum conubia porttitor felis.",
+      "In der Informatik werden Problemstellungen häufig mit Hilfe von Algorithmen gelöst. Der Informatikunterricht macht Schülerinnen und Schüler in unterschiedlichen Kontexten mit den Prinzipien der algorithmischen Problemlösung und der Implementierung ihrer Lösungsideen vertraut.",
     image: assets.informatik,
     bids: [
       {
@@ -241,7 +241,7 @@ const NFTData = [
     creator: "",
     price: 20.25,
     description:
-      "The action painter abstract expressionists were directly influenced by automatism. Pollock channelled this into producing gestural. Lorem ipsum dolor sit amet consectetur adipiscing elit consequat accumsan sapien, lectus convallis malesuada odio curae habitasse dignissim nascetur. Nulla sed velit erat vitae leo sem inceptos diam fames arcu hendrerit, quis ultrices in eleifend posuere ipsum conubia porttitor felis.",
+      "Im Themenbereich Dauermagnetismus werden altersangemessen magnetische Phänomene in Experimenten erkundet. Mit dem Modell der Elementarmagnete erfolgt die Begegnung mit einem ersten physikalischen Modell und somit ein erster Einstieg in die klassischen Arbeitsweisen der Physik.",
     image: assets.physik,
     bids: [
       {
@@ -287,7 +287,7 @@ const NFTData = [
     creator: "",
     price: 20.25,
     description:
-      "The action painter abstract expressionists were directly influenced by automatism. Pollock channelled this into producing gestural. Lorem ipsum dolor sit amet consectetur adipiscing elit consequat accumsan sapien, lectus convallis malesuada odio curae habitasse dignissim nascetur. Nulla sed velit erat vitae leo sem inceptos diam fames arcu hendrerit, quis ultrices in eleifend posuere ipsum conubia porttitor felis.",
+      "Die Lernenden beschäftigen sich mit der subjektiven Bedeutung von Erfahrungen, Prägungen und Voreinstellungen und die damit verbundene eigene Interpretation von Phänomenen. Sie schildern Alltagserfahrungen, beschreiben Sichtweisen und Gefühle und beschäftigen sich mit dem Verständnis von Problemen und Erfahrungen.",
     image: assets.religion,
     bids: [
       {
@@ -333,7 +333,7 @@ const NFTData = [
     creator: "",
     price: 20.25,
     description:
-      "The action painter abstract expressionists were directly influenced by automatism. Pollock channelled this into producing gestural. Lorem ipsum dolor sit amet consectetur adipiscing elit consequat accumsan sapien, lectus convallis malesuada odio curae habitasse dignissim nascetur. Nulla sed velit erat vitae leo sem inceptos diam fames arcu hendrerit, quis ultrices in eleifend posuere ipsum conubia porttitor felis.",
+      "Die Kompetenzen werden im Kerncurriculum in Grundlagen und Erweiterungen geordnet und ausdifferenziert. Dabei legt die Fachkonferenz die Verteilung der Kompetenzen für die einzelnen Schuljahrgänge fest. Zur fachlichen Konkretisierung werden folgende Themen und Begriffe aufgeführt.",
     image: assets.musik1,
     bids: [
       {
@@ -379,7 +379,7 @@ const NFTData = [
     creator: "",
     price: 20.25,
     description:
-      "The action painter abstract expressionists were directly influenced by automatism. Pollock channelled this into producing gestural. Lorem ipsum dolor sit amet consectetur adipiscing elit consequat accumsan sapien, lectus convallis malesuada odio curae habitasse dignissim nascetur. Nulla sed velit erat vitae leo sem inceptos diam fames arcu hendrerit, quis ultrices in eleifend posuere ipsum conubia porttitor felis.",
+      "Als Methodenkompetenz wird die Fähigkeit zur zielgerichteten Nutzung fachspezifischer Instrumente verstanden, welche zum zunehmend selbstständigen Erlangen neuer Erkenntnisse beiträgt. Fachspezifische Methoden und Arbeitstechniken werden an Inhalten erworben und eingesetzt. Politische und ökonomische Phänomene werden mithilfe fachspezifischer Methoden analysiert (z. B. Politikzyklus, Kreislaufmodell). Fachspezifische Arbeitstechniken werden zur methodischen Erschließung genutzt (z. B. von Statistiken, Karikaturen). Die Fachsprache wird kontextgebunden verwendet. Die Methodenkompetenz beinhaltet auch eine zunehmende Reflexionsfähigkeit hinsichtlich der Potenziale und Grenzen von fachspezifischen Methoden. Die Methodenkompetenz ist eher den prozessbezogenen Kompetenzen zugeordnet.",
     image: assets.bundestag,
     bids: [
       {

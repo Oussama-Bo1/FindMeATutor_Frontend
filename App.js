@@ -7,6 +7,12 @@ import { useFonts } from "expo-font";
 import Home from "./screens/Home";
 import Details from "./screens/Details";
 import Booking from "./screens/Booking";
+import Login from "./screens/Login";
+import SignUp from "./screens/SignUp";
+import ConfirmEmail from "./screens/ConfirmEmail";
+import ForgotPassword from "./screens/ForgotPassword";
+import NewPassword from "./screens/NewPassword";
+import {AuthContext, AuthProvider} from "./context/AuthContext";
 
 const theme = {
   ...DefaultTheme,
@@ -28,20 +34,29 @@ const App = () => {
   });
 
   if (!loaded) return null;
+  const {userToken} = React.useContext(AuthContext);
+  let initialRouteName = userToken !== null ? "Home" : "Login";
 
   return (
+      <AuthProvider>
     <NavigationContainer theme={theme}>
       <Stack.Navigator
         screenOptions={{
           headerShown: false,
         }}
-        initialRouteName="Home"
+      initialRouteName = {initialRouteName}
       >
-        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="Home" component={Home}/>
         <Stack.Screen name="Details" component={Details} />
-        <Stack.Screen name="Booking" component={Booking} />
+        <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="SignUp" component={SignUp} />
+        <Stack.Screen name="ForgotPassword" component={ForgotPassword} />
+        <Stack.Screen name="NewPassword" component={NewPassword} />
+        <Stack.Screen name="Booking" component={Booking}/>
+        <Stack.Screen name="ConfirmEmail" component={ConfirmEmail}/>
       </Stack.Navigator>
     </NavigationContainer>
+      </AuthProvider>
   );
 };
 

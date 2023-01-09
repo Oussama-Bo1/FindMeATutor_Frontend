@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import { View, Text, SafeAreaView, Image, StatusBar, FlatList } from "react-native";
+import { View, Text, SafeAreaView, Image, StatusBar, TextInput } from "react-native";
 
 import { COLORS, SIZES, assets, SHADOWS, FONTS } from "../constants";
 import { ForumMockData } from "../constants/ForumMockData";
 import { CircleButton, RectButton, SubInfo, DetailsDesc, DetailsBid, FocusedStatusBar } from "../components";
 import ForumCard from "../components/ForumCard";
+import { Title } from "../components/SubInfo";
+import { FlatList } from 'react-native-gesture-handler';
 
 const DetailsHeader = ({ data, navigation }) => (
 
@@ -26,8 +28,10 @@ const DetailsHeader = ({ data, navigation }) => (
 
 const CreateThread = ({ route, navigation }) => {
 
-  const [forumMockData, setForumMockData] = useState(ForumMockData);
   const { data } = route.params;
+  const [newThreadTitel, setNewThreadTitel] = useState('');
+  const [newThreadFrage, setNewThreadFrage] = useState('');
+
 
 
     return (
@@ -38,32 +42,10 @@ const CreateThread = ({ route, navigation }) => {
             translucent={true}
           />
     
-          <View
-            style={{
-              width: "100%",
-              position: "absolute",
-              bottom: 0,
-              paddingVertical: SIZES.font,
-              justifyContent: "center",
-              alignItems: "center",
-              backgroundColor: "rgba(255,255,255,0.5)",
-              zIndex: 1,
-            }}
-          >
-            <RectButton 
-              text={"Thread erstellen"} 
-              minWidth={170} 
-              fontSize={SIZES.large} 
-              handlePress={() => navigation.navigate("Home", { data })}
-              {...SHADOWS.dark} 
-              />
-          </View>
-    
           <FlatList
-            keyExtractor={(item) => item.id}
             showsVerticalScrollIndicator={false}
             contentContainerStyle={{
-              paddingBottom: SIZES.extraLarge * 3,
+              paddingBottom: SIZES.extraLarge,
             }}
             ListHeaderComponent={() => (
               <React.Fragment>
@@ -82,15 +64,69 @@ const CreateThread = ({ route, navigation }) => {
                     </Text>
                   
                 </View>
-                <View style={{ flex: 1 }}>
-                    <View style={{ zIndex: 0 }}>
-                        
-                  </View>
-                </View>
+                
               </React.Fragment>
             )}
           />
+          <View style = {{ 
+                    backgroundColor: COLORS.white,
+                    borderRadius: SIZES.font,
+                    marginBottom: SIZES.extraLarge,
+                    margin: SIZES.base,
+                    ...SHADOWS.dark
+                }}>
+                    <View style={{
+                        width: "100%",
+                    }}>
+                        <View style={{
+                            
+                        }}>
+                            <View style={{
+                                margin: SIZES.font,
+                                flexDirection: "row", 
+                                justifyContent: "space-between",
+                                alignItems: 'center'
+                            }}>
+                                <TextInput style={{
+                                    borderWidth: 1,
+                                    borderColor: COLORS.primary,
+                                    padding: SIZES.font,
+                                    margin: SIZES.font,
+                                    width: '100%'
+                                }}
+                                placeholder='Titel Deiner Frage...'
+                                placeholderTextColor={COLORS.gray}
+                                multiline
+                                onChangeText={(val) => setNewThreadTitel(val)}
+                                
+                                />
+                                <RectButton 
+                                    text={"Thread erstellen"} 
+                                    minWidth={170} 
+                                    fontSize={SIZES.large} 
+                                    handlePress={() => console.log(newThreadTitel + ', ' + newThreadFrage)}
+                                    {...SHADOWS.dark} 
+                                />
+                            </View>
+                            <TextInput style={{
+                                borderWidth: 1,
+                                borderColor: COLORS.primary,
+                                padding: SIZES.font,
+                                margin: SIZES.font,
+                                width: '95%'
+                            }}
+                            placeholder='Führe Deine Frage aus...'
+                            placeholderTextColor={COLORS.gray}
+                            multiline
+                            onChangeText={(val) => setNewThreadFrage(val)}
+                            
+                            />
+                        </View>
+                    </View>
+                </View>
         </SafeAreaView>
+        
+        
     )
 }
 

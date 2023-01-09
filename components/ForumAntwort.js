@@ -1,4 +1,4 @@
-import { View, Text } from 'react-native'
+import { View, Text, useWindowDimensions } from 'react-native'
 import React from 'react'
 import { Title } from './SubInfo'
 
@@ -20,7 +20,7 @@ const ForumAntwort = ({ antwort }) => {
     }}>
 
       <View style={{
-        
+        width: "100%"
       }}>
         <Title 
           title={user}
